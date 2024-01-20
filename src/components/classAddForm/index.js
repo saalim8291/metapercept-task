@@ -8,8 +8,7 @@ const ClassAddForm = ({ setFormVisible,classes,  setClasses }) => {
   const addClassHandler = (e) => {
     e.preventDefault()
     const payload = {
-      school_id: classes.length + 1,
-      schoolId: schoolId,
+      school_id: schoolId,
       status: status,
     };
 
@@ -17,6 +16,8 @@ const ClassAddForm = ({ setFormVisible,classes,  setClasses }) => {
         ...classes,
         payload
     ]);
+
+    setFormVisible(false)
   }
 
   return (

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./classEditForm.css"
 
 const ClassEditForm = ({
-  setFormVisible,
+  setEditFormVisible,
   classes,
   setClasses,
   editClassId,
@@ -29,11 +29,13 @@ const ClassEditForm = ({
     const newData = [...classes]
     newData[editClassId] = payload
     setClasses(newData);
+
+    setEditFormVisible(false)
   };
 
   return (
     <form className="class-edit-form">
-      <button className="close-btn" onClick={() => setFormVisible(false)}>
+      <button className="close-btn" onClick={() => setEditFormVisible(false)}>
         X
       </button>
       <h2>Edit Class Form</h2>

@@ -28,8 +28,8 @@ const Dashboard = () => {
     setEditClassId(index)
   }
 
-  const deleteHandler = (school_id) => {
-    const newData = classes.filter((data) => data.school_id !== school_id);
+  const deleteHandler = (dataIndex) => {
+    const newData = classes.filter((data, index) => dataIndex !== index);
     console.log(newData, "newData");
     setClasses(newData);
   };
@@ -72,9 +72,7 @@ const Dashboard = () => {
                 <button onClick={() => editHandler(index)}>Edit</button>
               </td>
               <td>
-                <button onClick={() => deleteHandler(data?.school_id)}>
-                  Delete
-                </button>
+                <button onClick={() => deleteHandler(index)}>Delete</button>
               </td>
             </tr>
           ))}
@@ -94,7 +92,7 @@ const Dashboard = () => {
           setEditFormVisible={setEditFormVisible}
           classes={classes}
           editClassId={editClassId}
-          // setClasses={setClasses}
+          setClasses={setClasses}
         />
       )}
     </div>
