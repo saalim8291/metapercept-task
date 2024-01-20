@@ -1,0 +1,13 @@
+.dashboard-container {
+    padding: 10px;
+}
+
+.add-class-btn {
+    float: right;
+    width: 120px;
+    height: 30px;
+}
+
+.clasess-table  {
+    border: 1px solid  black;
+}

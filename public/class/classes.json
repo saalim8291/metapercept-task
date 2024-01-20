@@ -1,0 +1,42 @@
+{
+    "classes": [
+        {
+            "id": "1",
+            "school_id": "1",
+            "students": [
+              {
+                "student_id": "B102",
+                "assignment": ""
+              }
+            ],
+            "status": "ACTIVE"
+          },
+          {
+            "id": "2",
+            "school_id": "2",
+            "students": [
+              {
+                "student_id": "B102",
+                "assignment": ""
+              }
+            ],
+            "status": "ACTIVE"
+          },
+          {
+            "id": "3",
+            "school_id": "3",
+            "students": [
+              {
+                "student_id": "A101",
+                "assignment": ""
+              },
+              {
+                "student_id": "A102",
+                "assignment": ""
+              }
+            ],
+            "status": "ACTIVE"
+          }
+
+    ]
+}

@@ -1,0 +1,14 @@
+.class-edit-form {
+    width: 500px;
+    height: 50vh;
+    background-color: skyblue;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 30px;
+}
+
+.close-btn {
+    float: right;
+}

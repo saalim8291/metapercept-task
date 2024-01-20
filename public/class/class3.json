@@ -1,0 +1,15 @@
+{
+    "id": "3",
+    "school-id": "3",
+    "students": [
+      {
+        "student-id": "A101",
+        "assignment": ""
+      },
+      {
+        "student-id": "A102",
+        "assignment": ""
+      }
+    ],
+    "status": "ACTIVE"
+  }
